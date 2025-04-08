@@ -6,12 +6,14 @@ form.addEventListener('submit', (e) => {
     let nome = document.querySelector('#nome')
     let idade = document.querySelector('#idade')
     let pais = document.querySelector('#pais')
+    let genero = document.querySelector('.genero')
     let lista = document.querySelector('.lista')
 
     let dados = {
         nome: nome.value,
         idade: idade.value,
-        pais: pais.value
+        pais: pais.value,
+        genero: genero.value
     }
     arr.push(dados)
 
@@ -22,6 +24,7 @@ form.addEventListener('submit', (e) => {
         <p> Nome: ${element.nome} </p>
         <p> Idade: ${element.idade} </p>
         <p> País: ${element.pais} </p>
+        <p> Gênero: ${element.genero} </p>
         <hr>
     `
     });
