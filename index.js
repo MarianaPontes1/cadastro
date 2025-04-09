@@ -18,9 +18,9 @@ form.addEventListener('submit', (e) => {
     arr.push(dados)
 
     lista.innerHTML = ''
-    arr.forEach((element) => {
-        console.log(element)
+    arr.forEach((element, index) => {
         lista.innerHTML += `
+         <p> Chegada: ${index + 1}º </p>
         <p> Nome: ${element.nome} </p>
         <p> Idade: ${element.idade} </p>
         <p> País: ${element.pais} </p>
